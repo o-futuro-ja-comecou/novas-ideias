@@ -1,11 +1,11 @@
-name: Add Label
+name: Add label
 
 on:
   issues:
     types: [opened]
 
 jobs:
-  add-labels:
+  add_label:
     runs-on: ubuntu-latest
     if: contains(github.event.issue.body, 'xxx') == false
     steps:
